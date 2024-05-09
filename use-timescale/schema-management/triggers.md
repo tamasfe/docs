@@ -58,4 +58,12 @@ Timescale supports the full range of triggers, including `BEFORE INSERT`,
 `AFTER DELETE`. For more information, see the
 [PostgreSQL docs][postgres-createtrigger].
 
+## Restrictions
+
+Currently there are some restrictions regarding triggers in Timescale, these might change in
+future releases:
+
+*   Statement-level triggers on hypertables do not yet support transition tables.
+
+
 [postgres-createtrigger]: https://www.postgresql.org/docs/current/static/sql-createtrigger.html
